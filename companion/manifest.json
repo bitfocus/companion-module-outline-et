@@ -1,28 +1,28 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
+	"id": "outline-et",
+	"name": "Outline ET",
+	"shortname": "ET",
+	"description": "Control Outline ET turntables over UDP: STOP, step, nudge, go to angle and set zero, with live position and motion state",
 	"version": "0.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-outline-et.git",
+	"bugs": "https://github.com/bitfocus/companion-module-outline-et/issues",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "Outline Software",
+			"email": "software@outline.it"
 		}
 	],
 	"runtime": {
-		"type": "node26",
+		"type": "node22",
 		"api": "nodejs-ipc",
 		"apiVersion": "0.0.0",
 		"entrypoint": "../dist/main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
-	"keywords": []
+	"manufacturer": "Outline",
+	"products": ["ET50-3D", "ET250R2-3D", "ET250-3D"],
+	"keywords": ["turntable", "rotator", "measurement", "loudspeaker"]
 }

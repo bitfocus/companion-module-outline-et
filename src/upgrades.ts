@@ -1,16 +1,6 @@
 import type { CompanionStaticUpgradeScript } from '@companion-module/base'
 import type { ModuleConfig } from './config.js'
 
-export const UpgradeScripts: CompanionStaticUpgradeScript<ModuleConfig>[] = [
-	/*
-	 * Place your upgrade scripts here
-	 * Remember that once it has been added it cannot be removed!
-	 */
-	// function (context, props) {
-	// 	return {
-	// 		updatedConfig: null,
-	// 		updatedActions: [],
-	// 		updatedFeedbacks: [],
-	// 	}
-	// },
-]
+// Once an upgrade script is published it can never be removed
+// (Companion tracks how many scripts have run per connection).
+export const UpgradeScripts: CompanionStaticUpgradeScript<ModuleConfig>[] = []
